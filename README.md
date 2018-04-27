@@ -315,8 +315,13 @@ docker、k8s、etcd、consul 都挺稳
 
 ---
 
-总的来说，Golang 处于一个发展的阶段，市场行情也还行，你又怎么看呢？
+总的来说，Golang 处于一个发展的阶段，市场行情也还行、应用场景较广，不过招聘数量不多，你又怎么看呢？
 
 最后放上今天新发布的 Logo :)
 
 ![image](https://i.imgur.com/nWO32Bl.jpg)
+
+
+## 参考
+
+- 项目地址：https://github.com/go-crawler/lagou_jobs
