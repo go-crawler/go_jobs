@@ -1,61 +1,12 @@
 # 了解一下Golang的市场行情
 
-项目地址：https://github.com/go-crawler/lagou_jobs
+项目地址：https://github.com/go-crawler/go_jobs
 
-如果对你有所帮助，欢迎 Star :)
+如果对你有所帮助，欢迎 Star，图床使用的是国外的，如果看不到图片的话你可能需要翻墙。
 
 ## 目标
 
-在工作中 Golang 已是一份子，想让大家了解一下 Golang 的市场行情，也想让更多的人熟悉它。因此主要是展示数据分析的结果
-
-目标站点是 [某招聘网站](https://www.lagou.com/) 的职位数据抓取和分析，爬取城市分别为 北京、上海、广州、深圳、杭州、成都，再得出一个结论
-
-### 分析
-
-首先需要进行页面分析，找到我们的抓取方向
-
-![image](https://i.loli.net/2018/04/26/5ae1e28a3412a.jpeg)
-
-搜索 golang 关键字，打开页面 F12 就能看到它发送了四个请求，留意 positionAjax.json 这个请求
-
-![image](https://i.loli.net/2018/04/26/5ae1efe538791.jpeg)
-
-我们仔细研判这个接口的入参和出参
-
-### 入参
-
-1、Query String Param
-
-- city：请求的城市
-
-- needAddtionalResult：是否需要补充额外的参数，这里默认 false
-
-2、Form Data
-- first：是否首页
-- pn：页码
-- kd：关键字
-
-### 出参
-
-![image](https://i.loli.net/2018/04/26/5ae1f4c9920a9.jpeg)
-
-就是它了，从返回结果可得出许多有用的信息
-
-- companyFullName：公司全称
-- companyLabelList：公司标签
-- companyShortName：公司简称
-- companySize：公司规模
-- education：学历要求
-- financeStage：融资阶段
-
-等等~
-
-
-### 分页
-
-在上面两张图中，可以发现在 content 节点中包含 pageNo、pageSize 字段，content.positionResult 节点有 totalCount 字段，可以得知当前是第几页，每页显示多少条，当前的职位总条数
-
-需要注意一下，分页的计算是要向上取整的
+在工作中 Golang 已是一份子，想让大家了解一下 Golang 的市场行情，也想让更多的人熟悉它。因此主要是展示数据分析的结果，城市分别为 北京、上海、广州、深圳、杭州、成都，再得出一个结论。
 
 ## 数据
 
@@ -324,4 +275,4 @@ docker、k8s、etcd、consul 都挺稳
 
 ## 参考
 
-- 项目地址：https://github.com/go-crawler/lagou_jobs
+- 项目地址：https://github.com/go-crawler/go_jobs

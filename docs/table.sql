@@ -1,4 +1,4 @@
-CREATE TABLE `sp_lg_job` (
+CREATE TABLE `sp_job` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `city` varchar(255) DEFAULT NULL,
   `district` varchar(255) DEFAULT '',
